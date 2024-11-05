@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Image Comparison Tool</h1>
+    
+    <div class="upload-container">
+        <label for="imageUpload">Upload Images:</label>
+        <input type="file" id="imageUpload" multiple accept="image/*">
+    </div>
+
+    <div class="scale-container">
+        <label for="scaleSlider">Scale Images:</label>
+        <input type="range" id="scaleSlider" min="0.25" max="3" step="0.1" value="1">
+        <span id="scaleValue">100%</span>
+    </div>
+
+    <div id="imageContainer" class="scrollable-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
